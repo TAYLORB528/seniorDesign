@@ -3,5 +3,5 @@
 
 ### Co-Op Experiences
 ### **Pathways Intern**,
-*Collaborated to build a resume generator for Siemens employees
+* Collaborated to build a resume generator for Siemens employees
 
