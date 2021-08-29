@@ -25,9 +25,11 @@
 * Platforms: Amazon Web Services (Cloud), AngularJS (Web Development)
 
 ### Areas of Interest
-* Database Applications
+* Web Applications
 * Cloud Computing
-* 
+* Database Automation
 
 ### Type of Project Sought
-* 
+* Utilize AWS to build a cloud application 
+* A health check-up and food planner application to help recognize health concerns and provide dietary help
+* A travel planning application to help look at cheapest flights, hotels and rental cars for a certain destination
