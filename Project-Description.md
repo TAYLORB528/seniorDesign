@@ -4,6 +4,7 @@ Team Members:
 
 •	Taylor Barthel, Computer Science, barthetr@mail.uc.edu
 
+
 ### Taylor Barthel
 #### barthetr@mail.uc.edu m:937.515.8174
 
@@ -40,7 +41,10 @@ Team Members:
 * A health check-up and food planner application to help recognize health concerns and provide dietary help
 * A travel planning application to help look at cheapest flights, hotels and rental cars for a certain destination
 
+
 •	Jeffrey Koopman, Computer Science, koopmajf@mail.uc.edu
+
+
 # Professional Biography 
 ## Jeffrey Koopman
 
@@ -87,6 +91,7 @@ Developing the next-generation of application is my goal; I am excited to achiev
 
 •	Domas Karvelis, Computer Science, karvelds@mail.uc.edu
 
+
 # Professional Biography <h1>
 * Throughout my co-op career I started from a QA role and moved into more development roles and a research role.
   Overall I am always happy to try to learn something new and try new roles
@@ -111,6 +116,7 @@ Skills used: Python
 
 
 •	Sam Ericksen, Computer Science, ericksst@mail.uc.edu
+	
 
 # Professional Biography
 
@@ -137,6 +143,7 @@ Skills used: Python
 ### Project Sought
 * I am seeking a capstone project in the field of Computer Science involving programming, and would like experience in app and/or web development
 
+	
 
 Project Area:
 
