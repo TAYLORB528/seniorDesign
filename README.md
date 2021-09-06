@@ -1,21 +1,42 @@
-# Professional Biography <h1>
-* Throughout my co-op career I started from a QA role and moved into more development roles and a research role.
-  Overall I am always happy to try to learn something new and try new roles
-## Contact Info <h2>
-* Name: Domas Karvelis
-* Email: karvelds@mail.uc.edu
-### Co-op Work Experience <h3>
-* Siemens Industry Software Inc, Milford, OH
-Software Research and Development Co-op July 2020 – December 2020
-Skills used: C#, Tensorflow, AR Hololens
-* International Techne Group, Milford, OH
-CADIQ Software Developer Co-op December 2019 – May 2020
-Skills used: C++ and Python
-* International Techne Group, Milford, OH
-CADIQ Software QA Co-op June 2019 – November 2019
-Skills used: Python
-* International Techne Group, Milford, OH
-CADIQ Product Support Co-op September 2018 – December 2018
-Skills used: Python
-#### Project Sought <h4>
-* Open to many different ideas for a project. I would prefer to work on a project that's an application or a website that helps solve a real world problem.
+# Professional Biography 
+## Jeffrey Koopman
+
+I am an aspiring software engineer who wants to build new and eciting applications that drive innovation. My points of interest include cloud based computing, 3D modeling, and mobile applications. I've spent 3 years developing enhanced feedback techniques for my QA to strengthen our ability to solve issues in our integrations. This includes a complete overhaul of or logging systems.
+
+I am excited to pursue these fields deeper in the future.
+
+
+
+## Contact Information
+Cell:  513-919-7078
+
+Email: koopmajf@mail.uc.edu
+
+
+
+## Co-op Work Experience
+### PLM Software Engineering Co-op - ITI Global, a Wipro Company (Aug 2018 - present)
+- Developed internal log analyzing software used by QA.
+
+- Developed internal automated testing tool used by QA and development team.
+
+- Overhauled legacy logging code for 2 integrations.
+
+- Leading new co-ops as a co-op advisor
+
+## Skillset
+- Programming Languages: C#, C++, Java, Python
+- Operating Systems: Windows OS, Linux (Ubuntu)
+- Software: Microsoft Office (Excel, Powerpoint, Word, etc...),Tortoise/Mercurial, Github
+- Interpersonal: Public Speaking, Effective Demonstrations
+
+
+## Project Sought
+Seeking a project that meets the following items:
+1. An application that can be deployed both on mobile and native PC platforms.
+
+2. An innovative solution to a problem that exists in young society.
+
+3. An ever-changing project that will grow as new ideas feed into the existing project.
+
+Developing the next-generation of application is my goal; I am excited to achieve it in any way possible.
