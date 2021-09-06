@@ -1,4 +1,4 @@
-Team Name: 
+Team Name: The IT Cruisers
 
 Team Members:
 
@@ -138,7 +138,6 @@ Skills used: Python
 * I am seeking a capstone project in the field of Computer Science involving programming, and would like experience in app and/or web development
 
 
-
 Project Area:
 
-
+We are going to create a web/mobile application with specific frontend and backend implementations and a native database system. 
