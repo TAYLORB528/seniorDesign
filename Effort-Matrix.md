@@ -2,18 +2,18 @@ Assignment 6: Milestones, Timeline, and Effort Matrix
 
 The IT Cruisers
 
-1. Milestones
+1. Milestones <br />
   1.1 Set-up biweekly meetings with Dave Keith (project advisor). (Deadline: October 8) <br />
-  1.2 Create frontend mockups. (Deadline: October 15)
-  1.3 All members have working environments ready for development. (Deadline: October 22)
-  1.4 Database requirements have been defined. (Deadline: November 5)
-  1.5 Frontend prototype is made (not including final styling). (Deadline: December 27)
-  1.6 Establish QA testing infrastructure. (Deadline: December 17)
-  1.7 Database structure is in place. (Deadline: December 17)
-  1.8 Backend APIs are created. (Deadline: December 27)
-  1.9 Frontend styling finished. (Deadline: January 21)
-  1.10 APK is available for download. (Deadline: February 28)
-  1.11 Deploy Choosr to Play Store. (Deadline: March 1)
+  1.2 Create frontend mockups. (Deadline: October 15) <br />
+  1.3 All members have working environments ready for development. (Deadline: October 22) <br />
+  1.4 Database requirements have been defined. (Deadline: November 5) <br />
+  1.5 Frontend prototype is made (not including final styling). (Deadline: December 27) <br />
+  1.6 Establish QA testing infrastructure. (Deadline: December 17) <br />
+  1.7 Database structure is in place. (Deadline: December 17) <br />
+  1.8 Backend APIs are created. (Deadline: December 27) <br />
+  1.9 Frontend styling finished. (Deadline: January 21) <br />
+  1.10 APK is available for download. (Deadline: February 28) <br />
+  1.11 Deploy Choosr to Play Store. (Deadline: March 1) <br />
 2. Timeline
 
 | **Task #** | **Linked Milestone** | **Task** | **Deadlines** |
