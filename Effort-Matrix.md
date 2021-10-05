@@ -3,7 +3,7 @@ Assignment 6: Milestones, Timeline, and Effort Matrix
 The IT Cruisers
 
 1. Milestones
-  1.1 Set-up biweekly meetings with Dave Keith (project advisor). (Deadline: October 8)
+  1.1 Set-up biweekly meetings with Dave Keith (project advisor). (Deadline: October 8) <br />
   1.2 Create frontend mockups. (Deadline: October 15)
   1.3 All members have working environments ready for development. (Deadline: October 22)
   1.4 Database requirements have been defined. (Deadline: November 5)
