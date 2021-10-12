@@ -10,9 +10,9 @@ Frontend Tasks:
 
 Backend Tasks:
 1. Develop APIs for data retrieval. (Taylor)
-2. Investigate Multi-platform deployment from Kotlin. (Sam)
+2. Investigate Multi-platform deployment from Xamarin. (Sam)
 3. Prototype network app loop response. (Jeffrey)
-4. Test network connectivity between multiple users in Kotlin. (Jeffrey)
+4. Test network connectivity between multiple users in Xamarin. (Jeffrey)
 5. Ensure network security between users. (Jeffrey)
 
 Database Tasks:
