@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Choosr.Views;
 
 namespace Choosr
 {
@@ -10,7 +11,7 @@ namespace Choosr
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Home();
         }
 
         protected override void OnStart()

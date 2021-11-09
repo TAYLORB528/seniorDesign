@@ -6,5 +6,5 @@
     <ShellContent Title="Notes"
                   Icon="icon_feed.png"
                   IsVisible="False"
-                  ContentTemplate="{DataTemplate views:HomePage}" />
+                  ContentTemplate="{DataTemplate views:Home}" />
 </Shell>

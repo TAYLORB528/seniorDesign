@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Choosr.Views;
 using Xamarin.Forms;
 
 namespace Choosr
@@ -13,6 +14,8 @@ namespace Choosr
         public MainPage()
         {
             InitializeComponent();
+            Routing.RegisterRoute(nameof(Home), typeof(Home));
+            Routing.RegisterRoute(nameof(ModeSelection), typeof(ModeSelection));
         }
     }
 }
