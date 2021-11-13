@@ -11,7 +11,7 @@ namespace Choosr
         {
             InitializeComponent();
 
-            MainPage = new Home();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()

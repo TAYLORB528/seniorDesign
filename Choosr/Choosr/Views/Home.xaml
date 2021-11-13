@@ -3,8 +3,10 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Choosr.Views.Home">
-    <Button Clicked="OnButtonClicked"
+    <StackLayout>
+        <Button Clicked="OnButtonClicked"
             Text="Click this shit"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="Center"></Button>
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center"></Button>
+    </StackLayout>
 </ContentPage>

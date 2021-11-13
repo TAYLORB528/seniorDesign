@@ -14,8 +14,10 @@ namespace Choosr
         public MainPage()
         {
             InitializeComponent();
+
             Routing.RegisterRoute(nameof(Home), typeof(Home));
             Routing.RegisterRoute(nameof(ModeSelection), typeof(ModeSelection));
+
         }
     }
 }

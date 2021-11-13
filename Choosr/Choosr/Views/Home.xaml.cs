@@ -12,9 +12,9 @@ namespace Choosr.Views
             InitializeComponent();
         }
 
-        async void OnButtonClicked(object sender, EventArgs args)
+        private async void OnButtonClicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync(nameof(ModeSelection));
+            await Shell.Current.GoToAsync($"//{nameof(ModeSelection)}");
         }
     }
 }
