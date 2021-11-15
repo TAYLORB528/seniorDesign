@@ -3,7 +3,8 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Choosr.Views.Home">
-    <StackLayout BackgroundColor="#5C9EAD">
+    <StackLayout BackgroundColor="#6C9BAB">
+        <Image x:Name="fileImage" Aspect="AspectFit" HeightRequest="60" WidthRequest="70"/>
         <Button Clicked="OnButtonClicked"
             Text="Click this button also"
             VerticalOptions="CenterAndExpand"

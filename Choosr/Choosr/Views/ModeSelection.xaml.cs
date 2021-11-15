@@ -10,8 +10,6 @@ namespace Choosr.Views
         public ModeSelection()
         {
             InitializeComponent();
-
-            fileImage.Source = (Device.RuntimePlatform == Device.Android) ? ImageSource.FromFile("ChoosrLogo.png") : ImageSource.FromFile("ChoosrLogo.png");
         }
     }
 }
