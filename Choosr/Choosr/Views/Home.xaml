@@ -3,9 +3,18 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Choosr.Views.Home">
-    <StackLayout>
+    <StackLayout BackgroundColor="#6C9DAC">
+        <Image
+          x:Name="CityGuideButton1"
+          Source="C:\seniorDesign\Choosr\Choosr\Images">
+            
+        </Image>
         <Button Clicked="OnButtonClicked"
-            Text="Click this shit"
+            Text="Click this button"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center"></Button>
+        <Button Clicked="OnButtonClicked"
+            Text="Click this button also"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center"></Button>
     </StackLayout>

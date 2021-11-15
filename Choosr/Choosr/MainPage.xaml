@@ -15,4 +15,5 @@
 
     <ShellContent Route="Home" ContentTemplate="{DataTemplate views:Home}" />
     <ShellContent Route="ModeSelection" ContentTemplate="{DataTemplate views:ModeSelection}" />
+    <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate views:LoginPage}" />
 </Shell>
