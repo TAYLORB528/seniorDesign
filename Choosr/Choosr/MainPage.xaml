@@ -3,16 +3,11 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:views="clr-namespace:Choosr.Views"
        x:Class="Choosr.MainPage"
-       BackgroundColor="#5C9EAD">
-
-    <Shell.Resources>
-        <ResourceDictionary>
-            <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="#5C9EAD" />
-            </Style>
-        </ResourceDictionary>
-    </Shell.Resources>
-
-    <ShellContent Route="Home" ContentTemplate="{DataTemplate views:Home}" />
-    <ShellContent Route="ModeSelection" ContentTemplate="{DataTemplate views:ModeSelection}" />
+       FlyoutBehavior="Disabled">
+    <FlyoutItem>
+        <ShellContent Route="Home" ContentTemplate="{DataTemplate views:Home}" />
+    </FlyoutItem>
+    <FlyoutItem>
+        <ShellContent Route="ModeSelection" ContentTemplate="{DataTemplate views:ModeSelection}" />
+    </FlyoutItem>
 </Shell>

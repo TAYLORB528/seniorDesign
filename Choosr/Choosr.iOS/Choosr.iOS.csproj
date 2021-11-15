@@ -133,4 +133,7 @@
       <Name>Choosr</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ChoosrLogo.png" />
+  </ItemGroup>
 </Project>
