@@ -11,7 +11,7 @@ namespace Choosr.Views
         {
             InitializeComponent();
 
-            fileImage.Source = (Device.RuntimePlatform == Device.Android) ? ImageSource.FromFile("FavoriteProfile.png") : ImageSource.FromFile("Images/sports.jpg")
+            fileImage.Source = (Device.RuntimePlatform == Device.Android) ? ImageSource.FromFile("ChoosrLogo.png") : ImageSource.FromFile("ChoosrLogo.png");
         }
     }
 }
