@@ -10,4 +10,7 @@
     <FlyoutItem>
         <ShellContent Route="ModeSelection" ContentTemplate="{DataTemplate views:ModeSelection}" />
     </FlyoutItem>
+    <FlyoutItem>
+        <ShellContent Route="GroupCode" ContentTemplate="{DataTemplate views:GroupCode}" />
+    </FlyoutItem>
 </Shell>

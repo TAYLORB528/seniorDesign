@@ -5,7 +5,8 @@
     x:Class="Choosr.Views.ModeSelection">
     <StackLayout BackgroundColor="#6C9BAB">
         <Image x:Name="fileImage" Aspect="AspectFit" HeightRequest="100" WidthRequest="120"/>
-        <Button Text="Play as a Group"
+        <Button Clicked="OnButtonClicked"
+                Text="Play as a Group"
                 TextColor="Black"
                 WidthRequest="175"
                 HorizontalOptions="Center"
