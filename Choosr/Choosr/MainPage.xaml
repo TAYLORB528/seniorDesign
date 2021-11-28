@@ -13,4 +13,7 @@
     <FlyoutItem>
         <ShellContent Route="GroupCode" ContentTemplate="{DataTemplate views:GroupCode}" />
     </FlyoutItem>
+    <FlyoutItem>
+        <ShellContent Route="EnterGroup" ContentTemplate="{DataTemplate views:EnterGroup}" />
+    </FlyoutItem>
 </Shell>

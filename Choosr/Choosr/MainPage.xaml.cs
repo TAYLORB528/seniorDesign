@@ -18,6 +18,7 @@ namespace Choosr
             Routing.RegisterRoute(nameof(Home), typeof(Home));
             Routing.RegisterRoute(nameof(ModeSelection), typeof(ModeSelection));
             Routing.RegisterRoute(nameof(GroupCode), typeof(GroupCode));
+            Routing.RegisterRoute(nameof(EnterGroup), typeof(EnterGroup));
 
         }
     }

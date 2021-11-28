@@ -13,7 +13,8 @@
                TextColor="#FFC4B900"
                FontSize="60"
                HorizontalOptions="Center"/>
-        <Button Text="Continue"
+        <Button Clicked="OnButtonClicked"
+                Text="Continue"
                 TextColor="Black"
                 HorizontalOptions="Center"
                 BackgroundColor="#BFE1E9"/>

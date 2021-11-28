@@ -24,6 +24,9 @@
     <None Remove="Services\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Update="Views\EnterGroup.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\GroupCode.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Choosr.Views.EnterGroup">
+    <StackLayout BackgroundColor="#6C9BAB">
+        <Image x:Name="fileImage" Aspect="AspectFit" HeightRequest="250" WidthRequest="270"/>
+        <Label Text="Enter your group code to play with your friends"
+               FontSize="30"
+               HorizontalOptions="Center"
+               TextColor="White"/>
+        <Entry Text="" MaxLength="5"></Entry>
+        <Button Clicked="OnButtonClicked"
+                Text="Continue"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                BackgroundColor="#BFE1E9"/>
+    </StackLayout>
+</ContentPage>
