@@ -17,5 +17,10 @@ namespace Choosr.Views
             InitializeComponent();
             fileImage.Source = (Device.RuntimePlatform == Device.Android) ? ImageSource.FromFile("ChoosrLogo.png") : ImageSource.FromFile("ChoosrLogo.png");
         }
+
+        private async void OnButtonClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync($"//{nameof(Home)}");
+        }
     }
 }

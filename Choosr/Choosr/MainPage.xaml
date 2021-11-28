@@ -16,4 +16,7 @@
     <FlyoutItem>
         <ShellContent Route="EnterGroup" ContentTemplate="{DataTemplate views:EnterGroup}" />
     </FlyoutItem>
+    <FlyoutItem>
+        <ShellContent Route="CategorySelection" ContentTemplate="{DataTemplate views:CategorySelection}" />
+    </FlyoutItem>
 </Shell>

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-
 using Xamarin.Forms;
 
 namespace Choosr.Views
@@ -14,7 +12,7 @@ namespace Choosr.Views
 
         private async void OnButtonClicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync($"//{nameof(GroupCode)}");
+            await Shell.Current.GoToAsync($"//{nameof(CategorySelection)}");
         }
     }
 }

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Choosr.Views.CategorySelection">
+    <StackLayout 
+        BackgroundColor="#5C9EAD">
+            <Label 
+                    Text="Choose A Category"
+                       FontAttributes="Bold"
+                       FontSize="25"
+                       TextColor="White"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+            <Button 
+                    Clicked="OnButtonClicked"
+                    Text="Action"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"></Button>
+            <Button 
+                    Clicked="OnButtonClicked2"
+                    Text="Comedy"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"></Button>
+            <Button 
+                    Clicked="OnButtonClicked3"
+                    Text="Horror"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"></Button>
+            <Button 
+                    Clicked="OnButtonClicked4"
+                    Text="Romantic"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"></Button>
+              <Button 
+                    Clicked="OnButtonClicked5"
+                    Text="Sci-Fi"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"></Button>
+    </StackLayout>
+</ContentPage>
