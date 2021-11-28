@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Choosr.Views.GroupCode">
+    <StackLayout BackgroundColor="#6C9BAB">
+        <Image x:Name="fileImage" Aspect="AspectFit" HeightRequest="100" WidthRequest="120"/>
+        <Label Text="Share This Group Code!"
+               FontSize="30"
+               HorizontalOptions="Center"
+               TextColor="Black"/>
+        <Label x:Name="myCode"
+               TextColor="#FFC4B900"
+               FontSize="60"
+               HorizontalOptions="Center"/>
+        <Button Clicked="OnButtonClicked"
+                Text="Continue"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                BackgroundColor="#BFE1E9"/>
+    </StackLayout>
+</ContentPage>

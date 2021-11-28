@@ -17,7 +17,7 @@ namespace Choosr
 
             Routing.RegisterRoute(nameof(Home), typeof(Home));
             Routing.RegisterRoute(nameof(ModeSelection), typeof(ModeSelection));
-            Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
+
         }
     }
 }

@@ -11,5 +11,10 @@ namespace Choosr.Views
         {
             InitializeComponent();
         }
+
+        private async void OnButtonClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync($"//{nameof(GroupCode)}");
+        }
     }
 }
