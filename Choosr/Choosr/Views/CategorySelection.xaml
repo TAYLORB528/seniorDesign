@@ -16,26 +16,41 @@
                     Clicked="OnButtonClicked"
                     Text="Action"
                     VerticalOptions="Center"
-                    HorizontalOptions="Center"></Button>
+                    HorizontalOptions="Center"
+                    WidthRequest="175"
+                    TextColor="Black"
+                    BackgroundColor="#BFE1E9"></Button>
             <Button 
                     Clicked="OnButtonClicked2"
                     Text="Comedy"
                     VerticalOptions="Center"
-                    HorizontalOptions="Center"></Button>
+                    HorizontalOptions="Center"
+                    WidthRequest="175"
+                    TextColor="Black"
+                    BackgroundColor="#BFE1E9"></Button>
             <Button 
                     Clicked="OnButtonClicked3"
                     Text="Horror"
                     VerticalOptions="Center"
-                    HorizontalOptions="Center"></Button>
+                    HorizontalOptions="Center"
+                    WidthRequest="175"
+                    TextColor="Black"
+                    BackgroundColor="#BFE1E9"></Button>
             <Button 
                     Clicked="OnButtonClicked4"
                     Text="Romantic"
                     VerticalOptions="Center"
-                    HorizontalOptions="Center"></Button>
+                    HorizontalOptions="Center"
+                    TextColor="Black"
+                    WidthRequest="175"
+                    BackgroundColor="#BFE1E9"></Button>
               <Button 
                     Clicked="OnButtonClicked5"
                     Text="Sci-Fi"
                     VerticalOptions="Center"
-                    HorizontalOptions="Center"></Button>
+                    HorizontalOptions="Center"
+                    TextColor="Black"
+                    WidthRequest="175"
+                    BackgroundColor="#BFE1E9"></Button>
     </StackLayout>
 </ContentPage>

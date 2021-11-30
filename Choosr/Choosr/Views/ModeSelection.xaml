@@ -18,6 +18,7 @@
                 HorizontalOptions="Center"
                 BackgroundColor="#BFE1E9"/>
         <Button Text="Enter a Code"
+                Clicked="EnterCodeButton"
                 TextColor="Black"
                 WidthRequest="100"
                 HorizontalOptions="Center"

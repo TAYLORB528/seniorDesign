@@ -22,5 +22,10 @@ namespace Choosr.Views
         {
             await Shell.Current.GoToAsync($"//{nameof(CategorySelection)}");
         }
+
+        private async void EnterCodeButton(System.Object sender, System.EventArgs e)
+        {
+            await Shell.Current.GoToAsync($"//{nameof(EnterGroup)}");
+        }
     }
 }
