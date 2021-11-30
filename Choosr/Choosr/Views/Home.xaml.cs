@@ -14,7 +14,7 @@ namespace Choosr.Views
 
         private async void OnButtonClicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync($"//{nameof(MovieSlider)}");
+            await Shell.Current.GoToAsync($"//{nameof(ModeSelection)}");
         }
     }
 }

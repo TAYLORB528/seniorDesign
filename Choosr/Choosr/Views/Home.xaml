@@ -5,7 +5,7 @@
     x:Class="Choosr.Views.Home">
     <StackLayout BackgroundColor="#5C9EAD">
         <Button Clicked="OnButtonClicked"
-            Text="Click this shit"
+            Text="Welcome to Choosr!"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center"></Button>
     </StackLayout>

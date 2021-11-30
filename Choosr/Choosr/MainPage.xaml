@@ -13,4 +13,13 @@
     <FlyoutItem>
         <ShellContent Route="MovieSlider" ContentTemplate="{DataTemplate views:MovieSlider}" />
     </FlyoutItem>
+        <FlyoutItem>
+        <ShellContent Route="GroupCode" ContentTemplate="{DataTemplate views:GroupCode}" />
+    </FlyoutItem>
+    <FlyoutItem>
+        <ShellContent Route="EnterGroup" ContentTemplate="{DataTemplate views:EnterGroup}" />
+    </FlyoutItem>
+    <FlyoutItem>
+        <ShellContent Route="CategorySelection" ContentTemplate="{DataTemplate views:CategorySelection}" />
+    </FlyoutItem>
 </Shell>
