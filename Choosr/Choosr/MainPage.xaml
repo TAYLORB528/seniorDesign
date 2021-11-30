@@ -10,4 +10,7 @@
     <FlyoutItem>
         <ShellContent Route="ModeSelection" ContentTemplate="{DataTemplate views:ModeSelection}" />
     </FlyoutItem>
+    <FlyoutItem>
+        <ShellContent Route="MovieSlider" ContentTemplate="{DataTemplate views:MovieSlider}" />
+    </FlyoutItem>
 </Shell>
