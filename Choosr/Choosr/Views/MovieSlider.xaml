@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:swipeCardView="clr-namespace:MLToolkit.Forms.SwipeCardView;assembly=MLToolkit.Forms.SwipeCardView"
+    x:Class="Choosr.Views.MovieSlider">
+    <StackLayout BackgroundColor="#6C9BAB">
+        <Image x:Name="fileImage" Aspect="AspectFit" HeightRequest="100" WidthRequest="120"/>
+        <swipeCardView:SwipeCardView
+            SwipedCommand="{Binding SwipedCommand}"
+            VerticalOptions="FillAndExpand"
+            ItemsSource="{Binding Movies}">
+            <swipeCardView:SwipeCardView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout
+                        WidthRequest="225"
+                        HeightRequest="100"
+                        HorizontalOptions="Center"
+                        BackgroundColor="#BFE1E9">
+                        <Label Text="{Binding Title}" FontSize="Large"/>
+                        <Image Source="{Binding ImagePath}" />
+                        <Label Text="{Binding Overview}" FontSize="Large"/>
+                    </StackLayout>
+                </DataTemplate>
+            </swipeCardView:SwipeCardView.ItemTemplate>
+        </swipeCardView:SwipeCardView>
+    </StackLayout>
+</ContentPage>
