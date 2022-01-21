@@ -13,7 +13,6 @@ namespace Choosr.Views
 
             Random rnd = new Random();
             String myGroupCode = "";
-
             for (int i = 0; i < 5; i++)
             {
                 char letter = (char)rnd.Next(65, 91);
@@ -27,6 +26,7 @@ namespace Choosr.Views
         private async void OnButtonClicked(object sender, EventArgs e)
         {
             await Shell.Current.GoToAsync($"//{nameof(CategorySelection)}");
+
         }
     }
 }

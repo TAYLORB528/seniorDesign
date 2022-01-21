@@ -1,4 +1,5 @@
 ﻿using System;
+
 using System.Collections.Generic;
 using Xamarin.Forms;
 
@@ -9,8 +10,11 @@ namespace Choosr.Views
         public ModeSelection()
         {
             InitializeComponent();
+        }
 
-            fileImage.Source = (Device.RuntimePlatform == Device.Android) ? ImageSource.FromFile("ChoosrLogo.png") : ImageSource.FromFile("ChoosrLogo.png");
+        private async void OnButtonClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync($"//{nameof(CategorySelection)}");
         }
 
         private async void GroupPlayButton(System.Object sender, System.EventArgs e)
