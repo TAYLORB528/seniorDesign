@@ -42,7 +42,7 @@ namespace Choosr.ViewModels
             foreach (var movie in movieObject.SelectToken("results"))
             {
                 object movieImage = Convert((String)movie["backdrop_path"]);
-                Movies.Add(new Movie { Title = (String)movie["title"], Overview = (String)movie["overview"], ID = (int)movie["id"], ImagePath = movieImage });
+                Movies.Add(new Movie { Title = (String)movie["title"], Overview = (String)movie["overview"], ID = (int)movie["id"], ImagePath = movieImage, VoteAverage = (float)movie["vote_average"] });
             }
 
         }

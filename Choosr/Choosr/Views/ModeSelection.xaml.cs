@@ -12,11 +12,6 @@ namespace Choosr.Views
             InitializeComponent();
         }
 
-        private async void OnButtonClicked(object sender, EventArgs e)
-        {
-            await Shell.Current.GoToAsync($"//{nameof(CategorySelection)}");
-        }
-
         private async void GroupPlayButton(System.Object sender, System.EventArgs e)
         {
             await Shell.Current.GoToAsync($"//{nameof(GroupCode)}");

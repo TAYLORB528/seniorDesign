@@ -16,7 +16,7 @@ namespace Choosr.Views
 
         private async void OnButtonClicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync($"//{nameof(CategorySelection)}");
+            await Shell.Current.GoToAsync($"//{nameof(ModeSelection)}");
         }
     }
 }
