@@ -5,22 +5,27 @@
     xmlns:swipeCardView="clr-namespace:MLToolkit.Forms.SwipeCardView;assembly=MLToolkit.Forms.SwipeCardView"
     x:Class="Choosr.Views.MovieSlider">
     <StackLayout BackgroundColor="#6C9BAB">
-        <Image x:Name="fileImage" Aspect="AspectFit" HeightRequest="100" WidthRequest="120"/>
+        <Image x:Name="fileImage" Aspect="AspectFit" HeightRequest="60"/>
         <swipeCardView:SwipeCardView
             SwipedCommand="{Binding SwipedCommand}"
             VerticalOptions="FillAndExpand"
             ItemsSource="{Binding Movies}">
             <swipeCardView:SwipeCardView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout
-                        WidthRequest="225"
-                        HeightRequest="100"
+                    <Frame
                         HorizontalOptions="Center"
+                        Margin="20"
+                        WidthRequest="250"
                         BackgroundColor="#BFE1E9">
-                        <Label Text="{Binding Title}" FontSize="Large"/>
-                        <Image Source="{Binding ImagePath}" />
-                        <Label Text="{Binding Overview}" FontSize="Large"/>
-                    </StackLayout>
+                        <StackLayout
+                            HeightRequest="200">
+                            <Label Text="{Binding Title}" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Medium"/>
+                            <Image Source="{Binding ImagePath}" WidthRequest="200" Margin="7, 0, 0, 0" />
+                            <Label Text="{Binding VoteAverage, StringFormat='Rating: {0}/10'}" HorizontalOptions="Center" TextColor="DimGray" HorizontalTextAlignment="Center" FontSize="Small"/>
+                            <BoxView HeightRequest="2" Color="DarkGoldenrod" />
+                            <Label Text="{Binding Overview}" HorizontalOptions="Center" Margin="0,10,0,0" TextColor="DimGray" HorizontalTextAlignment="Center" FontSize="Small" LineBreakMode="TailTruncation" MaxLines="9"/>
+                        </StackLayout>
+                    </Frame>
                 </DataTemplate>
             </swipeCardView:SwipeCardView.ItemTemplate>
         </swipeCardView:SwipeCardView>
