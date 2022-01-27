@@ -9,6 +9,7 @@
                 Clicked="GroupPlayButton"
                 TextColor="Black"
                 WidthRequest="175"
+                BorderRadius="10"
                 HorizontalOptions="Center"
                 BackgroundColor="#BFE1E9"/>
         <Button Text="Play on your own"
