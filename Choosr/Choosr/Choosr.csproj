@@ -24,9 +24,7 @@
     <PackageReference Include="MongoDB.Driver" Version="2.14.1" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="ViewModels\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="ViewModels\" />

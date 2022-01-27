@@ -3,20 +3,31 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Choosr.Views.GroupCode">
-    <StackLayout BackgroundColor="#6C9BAB">
-        <Image x:Name="fileImage" Aspect="AspectFit" HeightRequest="100" WidthRequest="120"/>
+    <StackLayout BackgroundColor="#5C9EAD">
+        <Image x:Name="fileImage" Aspect="AspectFit" HeightRequest="150" WidthRequest="150"/>
         <Label Text="Share This Group Code!"
-               FontSize="30"
+               FontAttributes="Bold"
+               FontSize="25"
                HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+        <Label x:Name="testing"
+               FontSize="25"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
                TextColor="Black"/>
         <Label x:Name="myCode"
-               TextColor="#FFC4B900"
-               FontSize="60"
-               HorizontalOptions="Center"/>
+               TextColor="#AB9969"
+               FontSize="50"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
         <Button Clicked="OnButtonClicked"
                 Text="Continue"
                 TextColor="Black"
                 HorizontalOptions="Center"
-                BackgroundColor="#BFE1E9"/>
+                VerticalOptions="Center"
+                CornerRadius="40"
+                WidthRequest="200"
+                HeightRequest="40"
+                Margin="0,5,0,5"/>
     </StackLayout>
 </ContentPage>
