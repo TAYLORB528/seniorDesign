@@ -4,8 +4,8 @@
 ## Using the Application
 
  1. Getting Started <br />
-a.What is Choosr? <br />
-Choosr is an application designed to make decision making more fun. For example, you can use Choosr in tournament mode to choose a movie. For each of the three rounds in tournament mode, the users will choose a genre, and movies in that genre will be displayed. The user (that’s you) will swipe left or right, meaning they like the movie or dislike the movie respectively. When the rounds have finished for all the users, the movies that the majority liked will be displayed. Users can also play in single mode, where one user can choose a genre and swipe left or right on the suggestions. <br />
+A. What is Choosr? <br />
+I. Choosr is an application designed to make decision making more fun. For example, you can use Choosr in tournament mode to choose a movie. For each of the three rounds in tournament mode, the users will choose a genre, and movies in that genre will be displayed. The user (that’s you) will swipe left or right, meaning they like the movie or dislike the movie respectively. When the rounds have finished for all the users, the movies that the majority liked will be displayed. Users can also play in single mode, where one user can choose a genre and swipe left or right on the suggestions. <br />
 Installing Choosr <br />
 Choosr is available on iOS and Android devices. <br />
 First Time Launch Guide<br />
