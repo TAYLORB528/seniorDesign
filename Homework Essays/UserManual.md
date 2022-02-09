@@ -39,5 +39,5 @@ Why can’t I join my friend’s group?<br />
 Make sure you or one of your friends has started a session; they should see a join code of 5 gold-yellow letters; This is your join code.<br />
 Make sure you’re entering the correct join code on your hosting friend’s screen.<br />
       
-How does Choosr know what movies I like?<br />
-Choosr uses advanced prediction algorithms to predict what films you and your friends love.<br />
+    How does Choosr know what movies I like?<br />
+        Choosr uses advanced prediction algorithms to predict what films you and your friends love.<br />
