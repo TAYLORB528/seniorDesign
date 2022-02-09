@@ -30,14 +30,15 @@ On the startup screen, select the button that says “Play On Your Own”. This 
 Results of a session <br />
 When a session is ended, the application will show the movie that you selected the most through the choosing process.<br />
 
-## FAQs 
+## **FAQs**
 
-Why should I use this app?<br />
-This app can be used to help you and a group of friends choose a movie to watch. <br />
+    1.**Why should I use this app?**<br />
+        1. This app can be used to help you and a group of friends choose a movie to watch. <br />
 
-Why can’t I join my friend’s group?<br />
-Make sure you or one of your friends has started a session; they should see a join code of 5 gold-yellow letters; This is your join code.<br />
-Make sure you’re entering the correct join code on your hosting friend’s screen.<br />
+    2.**Why can’t I join my friend’s group?**<br />
+        1. Make sure you or one of your friends has started a session; they should see a join code of 5 gold-yellow letters; This is your join code.<br />
+        2. Make sure you’re entering the correct join code on your hosting friend’s screen.<br />
       
-    How does Choosr know what movies I like?<br />
-        Choosr uses advanced prediction algorithms to predict what films you and your friends love.<br />
+    3.**How does Choosr know what movies I like?**<br />
+        1. Choosr uses advanced prediction algorithms to predict what films you and your friends love.<br />
+
