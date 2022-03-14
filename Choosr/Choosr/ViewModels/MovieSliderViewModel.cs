@@ -16,6 +16,7 @@ namespace Choosr.ViewModels
     public class MovieSliderViewModel
     {
         private ObservableCollection<Movie> _movies = new ObservableCollection<Movie>();
+        private uint _threshold;
         MoviesRestService movieClient = new MoviesRestService();
 
         public MovieSliderViewModel()
@@ -42,9 +43,19 @@ namespace Choosr.ViewModels
             foreach (var movie in movieObject.SelectToken("results"))
             {
                 object movieImage = Convert((String)movie["backdrop_path"]);
-                Movies.Add(new Movie { Title = (String)movie["title"], Overview = (String)movie["overview"], ID = (int)movie["id"], ImagePath = movieImage, VoteAverage = (float)movie["vote_average"] });
+                Movies.Add(new Movie { Title = (String)movie["title"], Overview = (String)movie["overview"], ID = (int)movie["id"], ImagePath = movieImage, VoteAverage = (float)movie["vote_average"], Genres = movie["genre_ids"].ToObject<int[]>() });
             }
 
+        }
+
+
+        public uint Threshold
+        {
+            get => _threshold;
+            set
+            {
+                _threshold = value;
+            }
         }
 
         public ObservableCollection<Movie> Movies

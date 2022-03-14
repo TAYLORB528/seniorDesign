@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-
 using Xamarin.Forms;
+using Xamarin.Essentials;
 
 namespace Choosr.Views
 {
@@ -10,13 +10,16 @@ namespace Choosr.Views
         public Home()
         {
             InitializeComponent();
-
             fileImage.Source = (Device.RuntimePlatform == Device.Android) ? ImageSource.FromFile("ChoosrLogo.png") : ImageSource.FromFile("ChoosrLogo.png");
         }
 
         private async void OnButtonClicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync($"//{nameof(ModeSelection)}");
+            DependencyService.Get<ChoosrInterface>().initiateAuth0();
+
+            await Shell.Current.GoToAsync($"//{nameof(WaitingPage)}");
+
+
         }
     }
 }

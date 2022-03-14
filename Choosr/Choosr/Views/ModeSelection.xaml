@@ -2,27 +2,33 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="Choosr.Views.ModeSelection">
-    <StackLayout BackgroundColor="#6C9BAB">
+    x:Class="Choosr.Views.ModeSelection"
+    BackgroundColor="#6C9BAB">
+    <StackLayout BackgroundColor="#6C9BAB" Margin="40">
         <Image x:Name="fileImage" Aspect="AspectFit" HeightRequest="100" WidthRequest="120"/>
         <Button Text="Play as a Group"
                 Clicked="GroupPlayButton"
                 TextColor="Black"
+                BorderRadius="10"
                 WidthRequest="175"
+                Margin="0, 20, 0, 0"
                 HorizontalOptions="Center"
                 BackgroundColor="#BFE1E9"/>
         <Button Text="Play on your own"
                 Clicked="SinglePlayButton"
                 TextColor="Black"
+                BorderRadius="10"
                 WidthRequest="175"
+                Margin="0, 0, 0, 70"
                 HorizontalOptions="Center"
                 BackgroundColor="#BFE1E9"/>
         <Button Text="Enter a Code"
                 Clicked="EnterCodeButton"
                 TextColor="Black"
-                WidthRequest="100"
+                BorderRadius="10"
+                WidthRequest="175"
                 HorizontalOptions="Center"
                 BackgroundColor="#E2FAFF"
-                HeightRequest="20"/>
+                HeightRequest="30"/>
     </StackLayout>
 </ContentPage>

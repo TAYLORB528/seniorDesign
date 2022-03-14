@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Choosr.Views.EnterGroup">
+             x:Class="Choosr.Views.EnterGroup"
+             BackgroundColor="#6C9BAB">
     <StackLayout BackgroundColor="#6C9BAB">
         <Image x:Name="fileImage" Aspect="AspectFit" HeightRequest="250" WidthRequest="270"/>
         <Label Text="Enter your group code to play with your friends"

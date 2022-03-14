@@ -12,5 +12,7 @@ namespace Choosr.Models
         public object ImagePath { get; set; }
 
         public float VoteAverage { get; set; }
+
+        public int[] Genres { get; set; }
     }
 }

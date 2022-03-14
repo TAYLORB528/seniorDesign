@@ -22,5 +22,12 @@ namespace Choosr.Services
             var users = usersTable.Find(filter).FirstOrDefault();
             return users;
         }
+
+        public async void UpdatePreferences(int[] genres, string userId)
+        {
+            IMongoDatabase choosrDatabase = mongoClient.GetDatabase("choosr");
+            var userPreferencesTable = choosrDatabase.GetCollection<BsonDocument>("userPreferences");
+            // var updatePreferences = await userPreferencesTable.InsertOneAsync();
+        }
     }
 }

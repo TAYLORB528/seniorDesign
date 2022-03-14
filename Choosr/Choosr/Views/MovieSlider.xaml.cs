@@ -8,6 +8,7 @@ using System.Text;
 using Choosr.Models;
 using Newtonsoft.Json.Linq;
 using System.Threading.Tasks;
+using MLToolkit.Forms.SwipeCardView.Core;
 
 namespace Choosr.Views
 {
@@ -19,20 +20,30 @@ namespace Choosr.Views
             InitializeComponent();
 
             BindingContext = new MovieSliderViewModel();
+            SwipeCardView.Dragging += OnDragging;
             fileImage.Source = (Device.RuntimePlatform == Device.Android) ? ImageSource.FromFile("ChoosrLogo.png") : ImageSource.FromFile("ChoosrLogo.png");
 
         }
 
-        void OnSwiped(object sender, SwipedEventArgs e)
+        void OnDragging(object sender, DraggingCardEventArgs e)
         {
-            switch (e.Direction)
+
+            var threshold = (BindingContext as MovieSliderViewModel).Threshold;
+            if (e.Direction == SwipeCardDirection.Left)
             {
-                case SwipeDirection.Left:
-                    Console.WriteLine("went left");
-                    break;
-                case SwipeDirection.Right:
-                    Console.WriteLine("went right");
-                    break;
+                Console.WriteLine("no");
+            }
+            else if (e.Direction == SwipeCardDirection.Right)
+            {
+                for (int i = 0; i < SwipeCardView.ItemsSource.Count; i++)
+                {
+                    var currentMovie = (Movie)SwipeCardView.ItemsSource[i];
+                    var selectedMovie = (Movie)SwipeCardView.TopItem;
+                    if (currentMovie.Title == selectedMovie.Title)
+                    {
+                        Console.WriteLine(selectedMovie);
+                    }
+                }
             }
         }
     }

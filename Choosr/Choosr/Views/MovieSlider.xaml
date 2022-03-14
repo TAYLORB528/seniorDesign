@@ -3,12 +3,17 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:swipeCardView="clr-namespace:MLToolkit.Forms.SwipeCardView;assembly=MLToolkit.Forms.SwipeCardView"
-    x:Class="Choosr.Views.MovieSlider">
+    x:Class="Choosr.Views.MovieSlider"
+    BackgroundColor="#6C9BAB">
     <StackLayout BackgroundColor="#6C9BAB">
         <Image x:Name="fileImage" Aspect="AspectFit" HeightRequest="60"/>
         <swipeCardView:SwipeCardView
+            x:Name="SwipeCardView"
+            Threshold="{Binding Threshold}"
             SwipedCommand="{Binding SwipedCommand}"
+            DraggingCommand="{Binding DraggingCommand}"
             VerticalOptions="FillAndExpand"
+            SupportedSwipeDirections="Left, Right"
             ItemsSource="{Binding Movies}">
             <swipeCardView:SwipeCardView.ItemTemplate>
                 <DataTemplate>

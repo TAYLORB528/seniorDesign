@@ -1,4 +1,5 @@
 ﻿using System;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Choosr.Views
@@ -9,7 +10,7 @@ namespace Choosr.Views
         {
             InitializeComponent();
             fileImage.Source = (Device.RuntimePlatform == Device.Android) ? ImageSource.FromFile("ChoosrLogo.png") : ImageSource.FromFile("ChoosrLogo.png");
-
+            var userId = Preferences.Get("user_id", "default_value");
         }
 
         private async void OnButtonClicked(object sender, EventArgs e)

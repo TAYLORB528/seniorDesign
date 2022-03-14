@@ -21,6 +21,7 @@ namespace Choosr
             Routing.RegisterRoute(nameof(CategorySelection), typeof(CategorySelection));
             Routing.RegisterRoute(nameof(EnterGroup), typeof(EnterGroup));
             Routing.RegisterRoute(nameof(GroupCode), typeof(GroupCode));
+            Routing.RegisterRoute(nameof(WaitingPage), typeof(WaitingPage));
         }
     }
 }

@@ -2,19 +2,9 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="Choosr.Views.Home"
-    x:Name="HomePage"
+    x:Class="Choosr.Views.WaitingPage"
     BackgroundColor="#6C9BAB">
     <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#6C9BAB">
         <Image x:Name="fileImage" Aspect="AspectFit" Margin="0, 50, 0, 0" WidthRequest="190"/>
-        <Button Text="Login"
-                Clicked="OnButtonClicked"
-                TextColor="Black"
-                BorderRadius="10"
-                WidthRequest="175"
-                Margin="0, 50, 0, 0"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                BackgroundColor="#BFE1E9"/>
     </StackLayout>
 </ContentPage>
