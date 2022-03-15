@@ -13,14 +13,18 @@ namespace Choosr.Services
         public GamePlayRestService()
         {
         }
-        /*
-        public async Task<BsonDocument> GetPlayHistory(string userId)
+
+        public async void NewSession(GamePlay gameplay)
         {
             IMongoDatabase choosrDatabase = mongoClient.GetDatabase("choosr");
-            var usersTable = choosrDatabase.GetCollection<BsonDocument>("gamePlay");
-            var filter = Builders<BsonDocument>.Filter.Eq("UserId", userId);
-            var users = usersTable.Find(filter).FirstOrDefault();
-            return users;
-        }*/
+            IMongoCollection<BsonDocument> usersTable = choosrDatabase.GetCollection<BsonDocument>("gamePlay");
+            var document = new BsonDocument
+            {
+                {"user_id", gameplay.UserId},
+                { "session_id", gameplay.SessionId},
+                { "session_join_code", gameplay.JoinCode}
+            };
+            await usersTable.InsertOneAsync(document);
+         }
     }
 }

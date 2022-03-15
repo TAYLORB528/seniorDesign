@@ -5,26 +5,19 @@ using Xamarin.Forms;
 using MongoDB.Driver;
 using MongoDB.Bson;
 using Choosr.Services;
+using Choosr.Models;
 
 namespace Choosr.Views
 {
     public partial class GroupCode : ContentPage
     {
-        SessionsRestService mongoDB = new SessionsRestService();
+        GamePlayRestService mongoDB = new GamePlayRestService();
 
         public GroupCode()
         {
             InitializeComponent();
-            //var dbBase = dbClient.ListDatabaseNames().ToList();
-
-            // Task<IMongoCollection<BsonDocument>> myDoc =  mongoDB.GetSessionsHistory();
 
             string randString = "Test";
-
-            //foreach(var thing in dbBase)
-            //{
-            //    randString += thing.ToString();
-            //}
 
             testing.Text = randString;
 
@@ -37,7 +30,13 @@ namespace Choosr.Views
             }
 
             fileImage.Source = (Device.RuntimePlatform == Device.Android) ? ImageSource.FromFile("ChoosrLogo.png") : ImageSource.FromFile("ChoosrLogo.png");
+
             myCode.Text = myGroupCode;
+
+            GamePlay dataDocs = new GamePlay{ UserId = 1234, SessionId = 1, JoinCode = myGroupCode };
+
+            mongoDB.NewSession(dataDocs);
+
         }
 
         private async void OnButtonClicked(object sender, EventArgs e)

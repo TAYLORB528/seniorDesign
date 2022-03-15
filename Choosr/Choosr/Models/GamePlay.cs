@@ -5,14 +5,8 @@ namespace Choosr.Models
     {
         public int UserId { get; set; }
 
-        public string SessionId { get; set; }
+        public int SessionId { get; set; }
 
         public string JoinCode { get; set; }
-
-        public string Title { get; set; }
-
-        public string Genre { get; set; }
-
-        public int SwipeAction { get; set; }
     }
 }
