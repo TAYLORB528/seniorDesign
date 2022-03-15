@@ -13,7 +13,7 @@ namespace Choosr
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new CategorySelection();
         }
 
         // public static User currUser { get; set; }

@@ -6,6 +6,10 @@ using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
 using Auth0.OidcClient;
+using IdentityModel.OidcClient.Results;
+using System.Security.Claims;
+using Choosr.Models;
+
 [assembly: Xamarin.Forms.Dependency(typeof(Choosr.Droid.MainActivity))]
 namespace Choosr.Droid
 {
@@ -27,7 +31,7 @@ namespace Choosr.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            initiate();
+            //initiate();
             LoadApplication(new App());
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
@@ -50,7 +54,27 @@ namespace Choosr.Droid
                 ClientId = "kqSAiP6nVLJY0nZuZnFc3o15H3LFbK6r"
             }, this);
             var loginResult = await client.LoginAsync();
-
+            UserInfoResult userInfo = await client.GetUserInfoAsync(loginResult.AccessToken);
+            var claims = userInfo.Claims;
+            var userId = "";
+            var isAuthenticated = false;
+            var name = "";
+            var accessToken = "";
+            foreach (Claim claim in claims)
+            {
+                if (claim.Type == "sub")
+                {
+                    userId = claim.Value;
+                }
+                if (claim.Type == "nickname")
+                {
+                    name = claim.Value;
+                }
+            }
+            var newUser = new User { UserId = userId, isAuthenticated = true, Name = name, AccessToken = loginResult.AccessToken };
+            var myObj = new App();
+            myObj.currUser = new User { UserId = userId, isAuthenticated = true, Name = name, AccessToken = loginResult.AccessToken };
+             
         }
     }
 }

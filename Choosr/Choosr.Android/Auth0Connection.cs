@@ -1,6 +1,4 @@
-﻿using System;
-using Auth0.OidcClient;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 [assembly: Xamarin.Forms.Dependency(typeof(Choosr.Droid.Auth0Connection))]
 namespace Choosr.Droid
 {
@@ -13,7 +11,7 @@ namespace Choosr.Droid
         public async void initiateAuth0()
         {
             var someyt = DependencyService.Get<MainActivity>();
-            someyt.initiate();
+            //someyt.initiate();
         }
     }
 }
