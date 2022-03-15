@@ -4,11 +4,13 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Choosr.Views.ModeSelection"
     BackgroundColor="#6C9BAB">
-    <StackLayout BackgroundColor="#6C9BAB" Margin="40">
-        <Image x:Name="fileImage" Aspect="AspectFit" HeightRequest="100" WidthRequest="120"/>
-        <Button Text="Play as a Group"
+    <StackLayout BackgroundColor="#6C9BAB" Margin="20">
+        <Image x:Name="fileImage" Aspect="AspectFit" WidthRequest="150" Margin="0, 0, 0, 20"/>
+        <Button x:Name="groupButton"
+                Text="Play as a Group"
                 Clicked="GroupPlayButton"
                 TextColor="Black"
+                IsEnabled="{Binding isAuthenticated}"
                 BorderRadius="10"
                 WidthRequest="175"
                 Margin="0, 20, 0, 0"
@@ -17,6 +19,7 @@
         <Button Text="Play on your own"
                 Clicked="SinglePlayButton"
                 TextColor="Black"
+                IsEnabled="{Binding isAuthenticated}"
                 BorderRadius="10"
                 WidthRequest="175"
                 Margin="0, 0, 0, 70"
@@ -25,6 +28,7 @@
         <Button Text="Enter a Code"
                 Clicked="EnterCodeButton"
                 TextColor="Black"
+                IsEnabled="{Binding isAuthenticated}"
                 BorderRadius="10"
                 WidthRequest="175"
                 HorizontalOptions="Center"

@@ -5,7 +5,7 @@ namespace Choosr.Models
     {
         public int UserId { get; set; }
 
-        public string SessionId { get; set; }
+        public int SessionId { get; set; }
 
         public string JoinCode { get; set; }
     }

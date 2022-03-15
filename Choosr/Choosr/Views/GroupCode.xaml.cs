@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using Choosr.Models;
+using Choosr.Services;
 using Xamarin.Forms;
 
 namespace Choosr.Views
 {
     public partial class GroupCode : ContentPage
     {
+        GamePlayRestService mongoDB = new GamePlayRestService();
         public GroupCode()
         {
             InitializeComponent();
@@ -21,6 +23,9 @@ namespace Choosr.Views
 
             fileImage.Source = (Device.RuntimePlatform == Device.Android) ? ImageSource.FromFile("ChoosrLogo.png") : ImageSource.FromFile("ChoosrLogo.png");
             myCode.Text = myGroupCode;
+            GamePlay dataDocs = new GamePlay { UserId = 1234, SessionId = 1, JoinCode = "test" };
+
+            mongoDB.NewSession(dataDocs);
         }
 
         private async void OnButtonClicked(object sender, EventArgs e)

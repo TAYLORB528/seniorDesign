@@ -15,13 +15,14 @@ namespace Choosr.Views
 
             MessagingCenter.Subscribe<App>(this, "Hi", (sender) =>
             {
-                this.Proceed();
+                var goodie = 1 + 1;
+                Proceed();
             });
         }
 
-        public void Proceed()
+        public async void Proceed()
         {
-            Shell.Current.GoToAsync($"//{nameof(ModeSelection)}");
+            await Shell.Current.GoToAsync($"//{nameof(ModeSelection)}");
         }
     }
 }

@@ -4,64 +4,59 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Choosr.Views.CategorySelection"
     BackgroundColor="#6C9BAB">
-    <StackLayout BackgroundColor="#5C9EAD">
-        <Image x:Name="fileImage" Aspect="AspectFit"  HeightRequest="150" WidthRequest="150"/>
+    <StackLayout BackgroundColor="#6C9BAB">
+        <Image x:Name="fileImage" Aspect="AspectFit"  WidthRequest="120" Margin="0,5,0,10"/>
             <Label 
-                    Text="CHOOSE A CATEGORY"
-                    FontAttributes="Bold"
-                    FontSize="25"
+                    Text="Choose a Category"
+                    FontSize="20"
                     TextColor="White"
                     VerticalOptions="Center"
-                    HorizontalOptions="Center"/>
-            <Button 
-                    Clicked="OnButtonClicked"
-                    Text="Action"
-                    VerticalOptions="Center"
                     HorizontalOptions="Center"
-                    BorderWidth="0"
-                    CornerRadius="40"
-                    WidthRequest="200"
-                    HeightRequest="40"
-                    Margin="0,5,0,5"></Button>
-            <Button 
-                    Clicked="OnButtonClicked2"
-                    Text="Comedy"
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center"                    
-                    BorderWidth="0"
-                    CornerRadius="40"
-                    WidthRequest="200"
-                    HeightRequest="40"
-                    Margin="0,5,0,5"></Button>
-            <Button 
-                    Clicked="OnButtonClicked3"
-                    Text="Horror"
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center"
-                    BorderWidth="0"
-                    CornerRadius="40"
-                    WidthRequest="200"
-                    HeightRequest="40"
-                    Margin="0,5,0,5"></Button>
-            <Button 
-                    Clicked="OnButtonClicked4"
-                    Text="Romantic"
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center"
-                    BorderWidth="0"
-                    CornerRadius="40"
-                    WidthRequest="200"
-                    HeightRequest="40"
-                    Margin="0,5,0,5"></Button>
-            <Button 
-                    Clicked="OnButtonClicked5"
-                    Text="Sci-Fi"
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center"
-                    BorderWidth="0"
-                    CornerRadius="40"
-                    WidthRequest="200"
-                    HeightRequest="40"
-                    Margin="0,5,0,5"></Button>
+                    Margin="0,5,0,10"/>
+            <Button
+                Text="Action"
+                Clicked="OnButtonClicked"
+                TextColor="Black"
+                BorderRadius="10"
+                WidthRequest="175"
+                Margin="0,0,0,5"
+                HorizontalOptions="Center"
+                BackgroundColor="#BFE1E9"/>
+            <Button
+                Text="Comedy"
+                Clicked="OnButtonClicked2"
+                TextColor="Black"
+                BorderRadius="10"
+                WidthRequest="175"
+                Margin="0,0,0,5"
+                HorizontalOptions="Center"
+                BackgroundColor="#BFE1E9"/>
+            <Button
+                Text="Horror"
+                Clicked="OnButtonClicked3"
+                TextColor="Black"
+                BorderRadius="11"
+                WidthRequest="175"
+                Margin="0,0,0,5"
+                HorizontalOptions="Center"
+                BackgroundColor="#BFE1E9"/>
+            <Button
+                Text="Romantic"
+                Clicked="OnButtonClicked4"
+                TextColor="Black"
+                BorderRadius="11"
+                WidthRequest="175"
+                Margin="0,0,0,5"
+                HorizontalOptions="Center"
+                BackgroundColor="#BFE1E9"/>
+            <Button
+                Text="Sci-Fi"
+                Clicked="OnButtonClicked5"
+                TextColor="Black"
+                BorderRadius="11"
+                WidthRequest="175"
+                Margin="0,0,0,5"
+                HorizontalOptions="Center"
+                BackgroundColor="#BFE1E9"/>
     </StackLayout>
 </ContentPage>

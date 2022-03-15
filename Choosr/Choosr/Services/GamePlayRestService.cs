@@ -14,13 +14,27 @@ namespace Choosr.Services
         {
         }
 
-        public async Task<BsonDocument> GetPlayHistory(string userId)
+        public async void NewSession(GamePlay gameplay)
         {
             IMongoDatabase choosrDatabase = mongoClient.GetDatabase("choosr");
-            var usersTable = choosrDatabase.GetCollection<BsonDocument>("users");
-            var filter = Builders<BsonDocument>.Filter.Eq("UserId", userId);
-            var users = usersTable.Find(filter).FirstOrDefault();
-            return users;
+            IMongoCollection<BsonDocument> usersTable = choosrDatabase.GetCollection<BsonDocument>("gamePlay");
+            var userId = ((App)App.Current).currUser.UserId;
+            var document = new BsonDocument
+            {
+                { "user_id", userId },
+                { "session_id", gameplay.SessionId },
+                { "session_join_code", gameplay.JoinCode }
+            };
+            await usersTable.InsertOneAsync(document);
+        }
+
+        public async Task<BsonDocument> GetJoinCode(string JoinCode)
+        {
+            IMongoDatabase choosrDatabase = mongoClient.GetDatabase("choosr");
+            var usersTable = choosrDatabase.GetCollection<BsonDocument>("gamePlay");
+            var filter = Builders<BsonDocument>.Filter.Eq("session_join_code", JoinCode);
+            var ID = usersTable.Find(filter).FirstOrDefault();
+            return ID;
         }
     }
 }

@@ -8,10 +8,16 @@ namespace Choosr.Views
 {
     public partial class ModeSelection : ContentPage
     {
+        public bool isAuthenticated = true;
         public ModeSelection()
         {
             InitializeComponent();
-            
+
+            MessagingCenter.Subscribe<App>(this, "Hi", (sender) =>
+            {
+                isAuthenticated = true;
+            });
+
             fileImage.Source = (Device.RuntimePlatform == Device.Android) ? ImageSource.FromFile("ChoosrLogo.png") : ImageSource.FromFile("ChoosrLogo.png");
         }
 

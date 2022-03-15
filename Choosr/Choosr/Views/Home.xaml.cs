@@ -17,7 +17,7 @@ namespace Choosr.Views
         {
             DependencyService.Get<ChoosrInterface>().initiateAuth0();
 
-            await Shell.Current.GoToAsync($"//{nameof(WaitingPage)}");
+            await Shell.Current.GoToAsync($"//{nameof(ModeSelection)}");
 
 
         }

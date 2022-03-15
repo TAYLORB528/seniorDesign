@@ -114,6 +114,7 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Image.imageset\Contents.json" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -132,11 +133,11 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.1</Version>
     </PackageReference>
-    <PackageReference Include="MongoDB.Driver">
-      <Version>2.10.4</Version>
-    </PackageReference>
     <PackageReference Include="Auth0.OidcClient.iOS">
       <Version>3.3.4</Version>
+    </PackageReference>
+    <PackageReference Include="MongoDB.Driver">
+      <Version>2.10.4</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

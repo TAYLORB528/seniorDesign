@@ -51,9 +51,7 @@ namespace Choosr.iOS
             UserInfoResult userInfo = await client.GetUserInfoAsync(loginResult.AccessToken);
             var claims = userInfo.Claims;
             var userId = "";
-            var isAuthenticated = false;
             var name = "";
-            var accessToken = "";
             foreach (Claim claim in claims) {
                 if(claim.Type == "sub") {
                     userId = claim.Value;
@@ -63,8 +61,7 @@ namespace Choosr.iOS
                 }
             }
             var newUser = new User { UserId = userId, isAuthenticated = true, Name = name, AccessToken = loginResult.AccessToken };
-            var myObj = new App();
-            myObj.currUser = new User { UserId = userId, isAuthenticated = true, Name = name, AccessToken = loginResult.AccessToken };
+            ((App)App.Current).currUser = newUser;
         }
     }
 }

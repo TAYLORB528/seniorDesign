@@ -1,5 +1,4 @@
 ﻿using System;
-using Auth0.OidcClient;
 using Xamarin.Forms;
 [assembly: Xamarin.Forms.Dependency(typeof(Choosr.Droid.Auth0Connection))]
 namespace Choosr.Droid

@@ -3,17 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Choosr.Views.EnterGroup"
              BackgroundColor="#6C9BAB">
-    <StackLayout BackgroundColor="#6C9BAB">
-        <Image x:Name="fileImage" Aspect="AspectFit" HeightRequest="250" WidthRequest="270"/>
-        <Label Text="Enter your group code to play with your friends"
-               FontSize="30"
+    <StackLayout>
+        <Image x:Name="fileImage" Aspect="AspectFit" WidthRequest="180"/>
+        <Label Text="Enter your join code to play!"
+               FontSize="15"
                HorizontalOptions="Center"
-               TextColor="White"/>
-        <Entry Text="" MaxLength="5"></Entry>
-        <Button Clicked="OnButtonClicked"
-                Text="Continue"
+               TextColor="White" 
+               Margin="0,40,0,0"/>
+        <Grid Margin="40,30,40,0">
+            <Frame
+                IsClippedToBounds="true"
+                Padding="0"
+                CornerRadius="10">
+                <Entry x:Name="groupEntry" MaxLength="5" TextColor="Black"  ClearButtonVisibility="WhileEditing" FontSize="25"  ></Entry>
+            </Frame>
+        </Grid>
+        <Button Text="Continue"
+                Clicked="OnButtonClicked"
                 TextColor="Black"
+                BorderRadius="10"
+                WidthRequest="175"
+                Margin="0,40,0,5"
                 HorizontalOptions="Center"
+                VerticalOptions="Center"
                 BackgroundColor="#BFE1E9"/>
     </StackLayout>
 </ContentPage>
